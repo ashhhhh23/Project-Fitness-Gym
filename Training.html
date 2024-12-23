@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <link rel="stylesheet" href="Header.css">
+</head>
+<body>
+<style>
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card widths */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+
+  .card-container img {
+    width: 100%; 
+    transition:  0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .card-container img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+
+
+  .card {
+    background-color: #243b55; /* Light dark blue */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3em;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fits without distortion, cropping if necessary */
+    border-radius: 8px;
+  }
+
+
+  h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 10px; /* Push description to the bottom */
+  }
+
+  .sub-head {
+      background-color: #73c2fb;
+      border-radius: 15px;
+      color: white;
+      
+  }
+
+  .sub-head a {
+      text-decoration: none; /* Remove underline from links */
+      color: white;
+  }
+
+  .space {
+      margin-top: 3em;
+      margin-bottom: 3em;
+      color: white;
+      text-align: center;
+      background-color: #5f93b8;
+      border-radius: 15px;
+      margin-left: 450px;
+      margin-right: 450px;
+  }
+
+  .full-course-container {
+      margin-top: 85px;
+  }
+
+
+
+</style>
+        <!-- Header with logo and title -->
+        <div class="header">
+          <a href="Homepage.html">
+            <img src="IMAGES/LOGO GYM.png" alt="Logo">
+          </a>
+            <h1>TRAINING</h1>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <a href="AboutUs.html">About Us</a> |
+            <a href="WhyJoin.html">Why Join Project Fitness</a> |
+            <a href="FindUs.html">Find Us</a>
+        </div>
+        
+        
+<div class="full-course-container">
+        <div class="space">
+            <h2>SELECT THE MUSCLE YOU WANT TO WORK ON.</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+              <div class="card-image">
+                <a href="Chest.html">
+                <img src="IMAGES/CHESTBOOM.jpg" alt="Chest Muscle" class="hover-image">
+                </a>
+              </div>
+              <h3 class="sub-head"><a href="Chest.html">Chest</h3></a>
+              <p>Chest exercises are an important way to build upper body strength. Strengthening the muscles making up the chest can help you achieve a strong, sculpted physique.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="Back.html">
+                <img src="IMAGES/Backmuscle.png" alt="Back Muscle" class="hover-image">
+                </a>
+              </div>
+              <h3 class="sub-head"><a href="Back.html" >Back</h3></a>
+              <p>It takes a strong back to lead a strong life! Back exercises strengthen the back, insulate the body against injuries, and promote healthier lives.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="ArmsandShoulders.html">
+                <img src="IMAGES/ArmsTricepAndShoulder.jpg" alt="Arms, Tricep And Shoulder Muscle" class="hover-image">
+                </a>
+              </div>
+              <h3 class="sub-head"><a href="ArmsandShoulders.html">Arms</h3></a>
+              <p>If you're aiming to boost upper body strength, don't neglect your arms! Arm exercises also promote long-term bone health.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="Legs.html">
+                <img src="IMAGES/Legmuscle.png" alt="Leg Muscle" class="hover-image">
+                </a>
+              </div>
+              <h3 class="sub-head"><a href="ArmsandShoulders.html">Legs</h3></a>
+              <p>Leg workouts teach you to improve stamina, power output, explosiveness, and mobility.</p>
+            </div>
+          </div>
+
+ </div>
+          
+       

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest</title>
+    <link rel="stylesheet" href="Header.css">
+    <style>
+        /* Container for background image and centered text */
+        .background-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 250px;
+        }
+
+        .background-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Section with description below the image */
+        .description {
+            background-color:#3A6D8C;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Table container */
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        /* Left column for exercises */
+        .exercise-section {
+            background-color: #3A6D8C;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .exercise-section summary {
+            color: #f7f7f7;
+            font-size: 20px;
+        }
+
+        .exercise-section h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .exercise-section img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+        }
+
+        /* Right column for anatomy image */
+        .anatomy-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+        }
+
+        .anatomy-img {
+            width: 100%; 
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .anatomy-img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+        }   
+
+        p {
+        color: rgb(247, 247, 247);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #3A6D8C;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: white;
+            text-align: center;
+        }
+
+        .close-btn {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="Homepage.html">
+            <img src="IMAGES/LOGO GYM.png" alt="Logo">
+        </a>
+        <h1>TRAINING</h1>
+    </div>
+
+    <div class="nav-bar">
+        <a href="Chest.html">Chest Workouts</a> |
+        <a href="Back.html">Back Workouts</a> |
+        <a href="ArmsandShoulders.html">Arms and Shoulders Workouts</a> |
+        <a href="Legs.html">Legs Workouts</a>
+    </div>
+
+    <div class="background-container">
+        <img src="IMAGES/ChestDemo.jpg" alt="Back & Biceps Workout">
+        <div class="background-text">
+            <h1 style="margin: 0; font-size: 24px;">THE ULTIMATE CHEST WORKOUT</h1>
+        </div>
+    </div>
+
+    <div class="description">
+        <p>Target your upper, mid, and lower pecs with these effective exercises!</p>
+    </div>
+
+    <table>
+        <tr>
+            <td valign="top" width="50%">
+                <!-- Upper Chest Exercises -->
+                <details class="exercise-section">
+                    <summary>Upper Chest Exercises</summary>
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>1. Incline Barbell Bench Press</h3>
+                        </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/Incline Barbell Bench Press.gif" alt="Incline Barbell Bench Press" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>2. Incline Dumbbell Flyes</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/Incline Dumbbell Flyes.gif" alt="Incline Dumbbell Flyes" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>3. Smith Machine Incline Press</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/Smith Machine Incline Press.gif" alt="Smith Incline Press" class="resized-gif">
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Mid Chest Exercises -->
+                <details class="exercise-section">
+                    <summary>Mid Chest Exercises</summary>
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>1. Flat Barbell Bench Press</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/FlatBenchPress.gif" alt="Flat Barbell Bench Press" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>2. Chest Dips</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/Chest Dips.gif" alt="Chest Dips" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>3. Dumbbell Bench Press</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/Dumbbell Bench Press.gif" alt="Dumbbell Bench Press" class="resized-gif">
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Lower Chest Exercises -->
+                <details class="exercise-section">
+                    <summary>Lower Chest Exercises</summary>
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>1. Decline Barbell Bench Press</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/DeclineBenchPress.gif" alt="Decline Barbell Bench Press" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>2. Decline Dumbbell Flyes</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/DeclineDumbbellFlyes.gif" alt="Decline Dumbbell Flyes" class="resized-gif">
+                        </div>
+                    </div>
+
+                    <div class="exercise-content">
+                        <div class="exercise-text">
+                            <h3>3. Cable Chest Press (Low Pulley)</h3>
+                            </div>
+                        <div class="exercise-img">
+                            <img src="IMAGES/CableChestPress.gif" alt="Cable Chest Press" class="resized-gif">
+                        </div>
+                    </div>
+                </details>
+            </td>
+
+            <!-- Anatomy Image on the Right Side -->
+            <td valign="top" width="50%" align="center">
+                <img src="IMAGES/ChestAnatomy.jpg" alt="Chest Anatomy" class="anatomy-img">
+            </td>
+        </tr>
+    </table>
+
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <p id="exerciseDetails">Exercise details will appear here.</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("exerciseModal");
+const closeModal = document.getElementById("closeModal");
+const exerciseDetails = document.getElementById("exerciseDetails");
+
+// Exercise data for the modal
+const exercises = {
+    "Incline Barbell Bench Press": "This exercise is great for building mass and strength in your upper pecs.",
+    "Incline Dumbbell Flyes": "Helps to stretch and target the upper chest muscles more effectively.",
+    "Smith Machine Incline Press": "A controlled motion to isolate your upper pecs even more.",
+    "Flat Barbell Bench Press": "The classic chest mass builder targeting your mid-pecs.",
+    "Chest Dips": "Excellent for hitting the mid-chest and adding overall chest thickness.",
+    "Dumbbell Bench Press": "Allows for greater range of motion to hit the mid-chest effectively.",
+    "Decline Barbell Bench Press": "Focuses primarily on your lower chest to complete the pec development.",
+    "Decline Dumbbell Flyes": "A perfect isolation move to hit your lower chest while stretching the muscles.",
+    "Cable Chest Press (Low Pulley)": "A great way to maintain tension on your lower chest through the entire range of motion."
+};
+
+function openModal(exerciseName) {
+    const details = exercises[exerciseName] || "No details available.";
+    exerciseDetails.innerHTML = `<strong>${exerciseName}</strong><br>${details}`;
+    modal.style.display = "block";
+}
+
+closeModal.onclick = function () {
+    modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+document.querySelectorAll(".exercise-content img").forEach(img => {
+    img.addEventListener("click", () => {
+        const exerciseName = img.alt; // Using the alt attribute as the exercise name
+        openModal(exerciseName);
+    });
+});
+    </script>
+</body>
+</html>

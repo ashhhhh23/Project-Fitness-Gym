@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaches</title>
+
+    <style>
+        /*overall designs*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            
+        }
+
+        body{
+            background-color: #001F3F;
+        }
+
+        /*Button designs*/
+        .button{
+            text-decoration: none;
+            font-weight: bolder;
+            background-color: #5f93b8;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .button:hover{
+            color: black;
+        }
+
+        /*Header format and color*/
+        .header{
+            margin-left: auto;
+            margin-right: 0;
+            background-color: #3A6D8C;
+        }
+
+        .alignheader{
+            align-items: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /*table designs*/
+        tr td{
+            background-color: #243b55;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        table{
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+        
+        h2{
+            background-color: #73c2fb;
+            padding: 5px;
+            border-radius: 15px
+        }
+
+        h3 a{
+            color: rgb(0, 140, 255);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with logo and title -->
+    <div align="center" class="alignheader">
+        <a href="Homepage.html">
+            <img src="whitelogo.png" alt="Logo" width="150" height="120" align="left">
+        </a>
+    </div>
+
+    <!--Buttons and Header title-->
+    <div align="center" class="header">
+        <h1 align="center" width="100%">PROJECT FITNESS: Coaches</h1>
+        <a href="Training.html" class="button">Training</a>
+        <a href="W" class="button">Join Project Fitness</a>
+        <a href="Facility.html" class="button">Facility</a>
+    </div>
+        
+    <h1 align="center" width="100%">Meet the coaches behind Project Fitness!</h1>
+
+    <table width="75%" align="center">
+        <tr>
+            <td>
+                <!--1st Coach photo-->
+                <a href="charles.html">
+                    <img src="coachb.png" width="400px" height="250px" >
+                </a>
+            </td>
+            
+            <!--1st Coach Description-->
+            <td>
+                <h3>Hi I'm Coach <a href="charles.html"><br>
+                    Charles Isip</a>!</h3>
+                <h4>Body Building Coach</h4>
+                <p>Looking to build muscle and get stronger? I can help you reach your fitness goals. I will work with you to create a personalized training plan, teach you proper form, and push you to challenge yourself.  With guidance, you'll learn the ins and outs of bodybuilding and see real results. </p>
+
+                <div align="center">
+                    <a href="facebook.com">
+                        <img src="fb.png" width="35"></a>
+                    <a href="ig.com">
+                        <img src="ig.webp" width="35"></a>
+                    <a href="gmail.com">
+                        <img src="gmail.png" width="40"></a>
+                    <a href="twitter.com">
+                        <img src="x.png" width="40"></a>
+                </div>
+            </td>
+        </tr>
+   
+        <tr>
+            <td>
+                <!--2nd Coach Photo-->
+                <a href="ayen.html">
+                    <img src="coachg1.jpg" width="400px" height="250px" >
+                </a>
+            </td>
+
+            <!--2nd Coach Description-->
+            <td>
+                <h3>Hi I'm Coach <a href="ayen.html"><br>
+                    Ayen Gacelo</a>!</h3>
+                <h4>Fitness Coach</h4>
+                <p>Alright, let's get real! You're here to level up your fitness game, right?  I'm your guide, your coach, your hype - whatever you need!  We're gonna push boundaries,  sweat it out, and build the body you've always wanted.  Ready to ditch the boring routine and unlock your full potential?  Let's get started! </p>
+
+                <div align="center">
+                <a href="facebook.com">
+                    <img src="fb.png" width="35"></a>
+                <a href="ig.com">
+                    <img src="ig.webp" width="35"></a>
+                <a href="gmail.com">
+                    <img src="gmail.png" width="40"></a>
+                <a href="twitter.com">
+                    <img src="x.png" width="40"></a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <!--3rd Coach Photo-->
+                <a href="ashley.html">
+                    <img src="coachg2.jpg" width="400px" height="250px" >
+            </td>
+            
+            <!--3rd Coach Description-->
+            <td>
+                <h3>Hi I'm Coach <a href="ashley.html"><br>
+                    Ashley Rosario</a>!</h3>
+                <h4>Nutrionist Coach</h4>
+                <p>Forget fat diets and confusing nutrition labels!  I'm your nutrition coach, and I'm here to fuel your fitness journey with real, delicious, and effective strategies.  We'll break down the science of food, craft a personalized plan that works for YOU, and crush those cravings with healthy alternatives you'll actually enjoy. </p>
+
+                <div align="center">
+                    <a href="facebook.com">
+                        <img src="fb.png" width="35"></a>
+                    <a href="ig.com">
+                        <img src="ig.webp" width="35"></a>
+                    <a href="gmail.com">
+                        <img src="gmail.png" width="40"></a>
+                    <a href="twitter.com">
+                        <img src="x.png" width="40"></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+            // Add alert for clicking on images
+            const coachImages = document.querySelectorAll('table img');
+            coachImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    alert('Learn more about this coach!');
+                });
+            });
+    </script>
+
+</body>
+</html>
+    
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legs</title>
+    <link rel="stylesheet" href="Header.css">
+    <style>
+        /* Container for background image and centered text */
+        .background-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 250px;
+        }
+
+        .background-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Section with description below the image */
+        .description {
+            background-color:#3A6D8C;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Table container */
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        /* Left column for exercises */
+        .exercise-section {
+            background-color: #3A6D8C;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .exercise-section summary {
+            color: #f7f7f7;
+            font-size: 20px;
+        }
+
+        .exercise-section h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .exercise-section img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+            cursor: pointer;
+        }
+
+        /* Right column for anatomy image */
+        .anatomy-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .anatomy-img:hover {
+            transform: scale(1.1);
+        }   
+
+        p {
+            color: rgb(247, 247, 247);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #3A6D8C;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .modal-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .modal-description {
+            font-size: 18px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with logo and title -->
+    <div class="header">
+        <a href="Homepage.html">
+          <img src="IMAGES/LOGO GYM.png" alt="Logo">
+        </a>
+        <h1>TRAINING</h1>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="Chest.html">Chest Workouts</a> |
+        <a href="Back.html">Back Workouts</a> |
+        <a href="ArmsandShoulders.html">Arms and Shoulders Workouts</a> |
+        <a href="Legs.html">Legs Workouts</a>
+    </div>
+    
+    <!-- Background Image and Centered Text -->
+    <div class="background-container">
+        <img src="IMAGES/Legmuscle.png" alt="Legs Workout">
+        <div class="background-text">
+            <h1 style="margin: 0; font-size: 24px;">THE ULTIMATE LEGS WORKOUT</h1>
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        <p>Target your quads, hamstrings, and calves with these effective exercises!</p>
+    </div>
+
+    <!-- Table for Exercises and Anatomy -->
+    <table>
+        <tr>
+            <!-- Exercises on the Left Side -->
+            <td valign="top" width="65%">
+                <!-- Quads Exercises -->
+                <details class="exercise-section">
+                    <summary>Quadriceps (Quads) Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Barbell Squat</h3>
+                        <img src="IMAGES/BarbellSquat.gif" alt="Barbell Squat" class="exercise-img">
+
+                        <h3>2. Leg Press</h3>
+                        <img src="IMAGES/Leg Press.gif" alt="Leg Press" class="exercise-img">
+
+                        <h3>3. Bulgarian Split Squat</h3>
+                        <img src="IMAGES/Bulgarian Split Squat.gif" alt="Bulgarian Split Squat" class="exercise-img">
+                    </div>
+                </details>
+
+                <!-- Hamstrings Exercises -->
+                <details class="exercise-section">
+                    <summary>Hamstrings Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Romanian Deadlift</h3>
+                        <img src="IMAGES/Deadlifts.gif" alt="Romanian Deadlift" class="exercise-img">
+
+                        <h3>2. Hamstring Curl Machine</h3>
+                        <img src="IMAGES/Hamstring Curl Machine.gif" alt="Hamstring Curl Machine" class="exercise-img">
+
+                        <h3>3. Glute-Ham Raise</h3>
+                        <img src="IMAGES/Glute-Ham Raise.gif" alt="Glute-Ham Raise" class="exercise-img">
+                    </div>
+                </details>
+
+                <!-- Calves Exercises -->
+                <details class="exercise-section">
+                    <summary>Calves Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Standing Calf Raise</h3>
+                        <img src="IMAGES/Standing Calf Raise.gif" alt="Standing Calf Raise" class="exercise-img">
+
+                        <h3>2. Seated Calf Raise</h3>
+                        <img src="IMAGES/Seated Calf Raise.gif" alt="Seated Calf Raise" class="exercise-img">
+
+                        <h3>3. Donkey Calf Raise</h3>
+                        <img src="IMAGES/Donkey Calf Raise.gif" alt="Donkey Calf Raise" class="exercise-img">
+                    </div>
+                </details>
+            </td>
+
+            <!-- Anatomy Image on the Right Side -->
+            <td valign="top" width="35%" align="center">
+                <img src="IMAGES/LegAnatomy.jpg" alt="Leg Anatomy" class="anatomy-img">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Modal -->
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header" id="modalTitle"></div>
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("exerciseModal");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const closeBtn = document.querySelector(".close");
+        const exerciseImages = document.querySelectorAll(".exercise-img");
+
+        const exerciseDetails = {
+            "Barbell Squat": "The king of leg exercises, the squat builds overall leg strength, particularly targeting the quads.",
+            "Leg Press": "Focuses on the quads while allowing you to control the range of motion and resistance.",
+            "Bulgarian Split Squat": "A unilateral movement that emphasizes balance and targets each quad individually.",
+            "Romanian Deadlift": "A compound movement that primarily targets the hamstrings and glutes for strength and hypertrophy.",
+            "Hamstring Curl Machine": "Isolates the hamstrings and helps develop strength in the back of the legs.",
+            "Glute-Ham Raise": "A highly effective exercise for hamstring development and knee joint stability.",
+            "Standing Calf Raise": "A key exercise for building calf strength and size, targeting the gastrocnemius.",
+            "Seated Calf Raise": "Emphasizes the soleus muscle, which is crucial for building thicker calves.",
+            "Donkey Calf Raise": "A great variation that stretches the calves under load for maximum contraction."
+        };
+
+        exerciseImages.forEach(img => {
+            img.addEventListener("click", function () {
+                const exerciseName = this.alt;
+                modalTitle.textContent = exerciseName;
+                modalDescription.textContent = exerciseDetails[exerciseName] || "No description available.";
+                modal.style.display = "block";
+            });
+        });
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

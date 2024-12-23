@@ -1,0 +1,43 @@
+/* External CSS File: styles.css */
+
+/* Global Styles */
+body {
+    background-color: #001F3F;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #001F3F;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    margin: 9;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #3A6D8C;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arms and Shoulders</title>
+    <link rel="stylesheet" href="Header.css">
+    <style>
+        /* Container for background image and centered text */
+        .background-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 250px;
+        }
+
+        .background-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Section with description below the image */
+        .description {
+            background-color: #3A6D8C;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Table container */
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        /* Left column for exercises */
+        .exercise-section {
+            background-color: #3A6D8C;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .exercise-section summary {
+            color: #f7f7f7;
+            font-size: 20px;
+        }
+
+        .exercise-section h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .exercise-section img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+            cursor: pointer;
+        }
+
+        /* Right column for anatomy image */
+        .anatomy-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #c4bdb8;
+        }
+
+        .anatomy-img {
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .anatomy-img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            color: rgb(247, 247, 247);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #3A6D8C;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: white;
+            text-align: center;
+        }
+
+        .close-btn {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with logo and title -->
+    <div class="header">
+        <a href="Homepage.html">
+          <img src="IMAGES/LOGO GYM.png" alt="Logo">
+        </a>
+          <h1>TRAINING</h1>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="Chest.html">Chest Workouts</a> |
+        <a href="Back.html">Back Workouts</a> |
+        <a href="ArmsandShoulders.html">Arms and Shoulders Workouts</a> |
+        <a href="Legs.html">Legs Workouts</a>
+    </div>
+
+    <!-- Background Image and Centered Text -->
+    <div class="background-container">
+        <img src="IMAGES/ArmsTricepAndShoulder.jpg" alt="Arms and Shoulders Workout">
+        <div class="background-text">
+            <h1 style="margin: 0; font-size: 24px;">THE ULTIMATE ARMS AND SHOULDERS WORKOUT</h1>
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        <p>Target your biceps, triceps, and shoulders with these effective exercises!</p>
+    </div>
+
+    <!-- Table for Exercises and Anatomy -->
+    <table>
+        <tr>
+            <!-- Exercises on the Left Side -->
+            <td valign="top" width="65%">
+                <!-- Biceps Exercises -->
+                <details class="exercise-section">
+                    <summary>Biceps Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Barbell Curl</h3>
+                        <img src="IMAGES/BarbellCurl.gif" alt="Barbell Curl">
+                        <h3>2. Dumbbell Hammer Curl</h3>
+                        <img src="IMAGES/HammerCurl.gif" alt="Dumbbell Hammer Curl">
+                        <h3>3. Concentration Curl</h3>
+                        <img src="IMAGES/Concentration Curl.gif" alt="Concentration Curl">
+                    </div>
+                </details>
+
+                <!-- Triceps Exercises -->
+                <details class="exercise-section">
+                    <summary>Triceps Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Triceps Dips</h3>
+                        <img src="IMAGES/Triceps Dips.gif" alt="Triceps Dips">
+                        <h3>2. Overhead Triceps Extension</h3>
+                        <img src="IMAGES/Overhead Triceps Extension.gif" alt="Overhead Triceps Extension">
+                        <h3>3. Close-Grip Barbell Press</h3>
+                        <img src="IMAGES/Close-Grip Barbell Press.gif" alt="Close-Grip Barbell Press">
+                    </div>
+                </details>
+
+                <!-- Shoulders Exercises -->
+                <details class="exercise-section">
+                    <summary>Shoulders Exercises</summary>
+                    <div class="exercise-content">
+                        <h3>1. Overhead Shoulder Press</h3>
+                        <img src="IMAGES/Overhead Shoulder Press.gif" alt="Overhead Shoulder Press">
+                        <h3>2. Lateral Raise</h3>
+                        <img src="IMAGES/Lateral Raise.gif" alt="Lateral Raise">
+                        <h3>3. Face Pull</h3>
+                        <img src="IMAGES/Face Pull.gif" alt="Face Pull">
+                    </div>
+                </details>
+            </td>
+
+            <!-- Anatomy Image on the Right Side -->
+            <td valign="top" width="35%" align="center">
+                <img src="IMAGES/Arms2.jpg" alt="Shoulder Anatomy" class="anatomy-img">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Modal for Exercise Details -->
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <div id="exerciseDetails"></div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("exerciseModal");
+        const closeModal = document.getElementById("closeModal");
+        const exerciseDetails = document.getElementById("exerciseDetails");
+
+        const exercises = {
+            "Barbell Curl": "A staple in every biceps routine, this exercise helps add mass and strength to the biceps.",
+            "Dumbbell Hammer Curl": "Engages the brachialis and adds thickness to the arms.",
+            "Concentration Curl": "Targets the peak of the biceps for a more defined and isolated contraction.",
+            "Triceps Dips": "Targets the triceps while also engaging the chest and shoulders.",
+            "Overhead Triceps Extension": "Great isolation for stretching and engaging the long head of the triceps.",
+            "Close-Grip Barbell Press": "Compound exercise that focuses on triceps, chest, and shoulders.",
+            "Overhead Shoulder Press": "Builds overall shoulder strength, focusing on front and side deltoids.",
+            "Lateral Raise": "Isolation exercise for side delts, helping to broaden shoulders.",
+            "Face Pull": "Targets rear delts, improving posture and stability."
+        };
+
+        function openModal(exerciseName) {
+            const details = exercises[exerciseName] || "No details available.";
+            exerciseDetails.innerHTML = `<strong>${exerciseName}</strong><br>${details}`;
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        document.querySelectorAll(".exercise-content img").forEach(img => {
+            img.addEventListener("click", () => {
+                const exerciseName = img.alt;
+                openModal(exerciseName);
+            });
+        });
+    </script>
+</body>
+</html>
